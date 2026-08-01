@@ -1,4 +1,7 @@
-/* Basic reset */
+/* =========================
+   Basic Reset
+========================= */
+
 * {
   box-sizing: border-box;
 }
@@ -12,7 +15,10 @@ body {
   background: #f5f8f9;
 }
 
-/* Intro section */
+/* =========================
+   Hero Section
+========================= */
+
 .hero {
   min-height: 80vh;
   display: flex;
@@ -37,12 +43,16 @@ body {
   line-height: 1.6;
 }
 
-/* Scrollytelling section */
+/* =========================
+   Scrollytelling Layout
+========================= */
+
 #scrolly {
   position: relative;
 }
 
-/* Sticky map */
+/* Sticky Leaflet map */
+
 #map {
   position: sticky;
   top: 0;
@@ -51,7 +61,8 @@ body {
   z-index: 0;
 }
 
-/* Story text layered over the map */
+/* Story text */
+
 #story {
   position: relative;
   z-index: 500;
@@ -61,12 +72,21 @@ body {
   padding-bottom: 30vh;
 }
 
+/* =========================
+   Story Steps
+========================= */
+
 .step {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 10vh;
+
+  opacity: 0.55;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .step h2,
@@ -91,26 +111,8 @@ body {
   font-size: 1.05rem;
   line-height: 1.6;
 }
-/* Mobile layout */
-@media (max-width: 700px) {
-  #story {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  .step {
-    min-height: 100vh;
-  }
-}
-
-/* Active step styling */
-.step {
-  opacity: 0.55;
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
-}
+/* Active step */
 
 .step.is-active {
   opacity: 1;
@@ -120,4 +122,22 @@ body {
 .step.is-active h2,
 .step.is-active p {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 700px) {
+
+  #story {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .step {
+    min-height: 100vh;
+  }
+
 }
