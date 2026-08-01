@@ -2,76 +2,76 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
 
-<meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+  <title>Blue River Watershed Story</title>
 
-<title>Blue River Watershed Story</title>
+  <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet"
-      href="style.css">
-
-<link
-rel="stylesheet"
-href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
 </head>
 
 <body>
 
-<section class="hero">
+  <section class="hero">
+    <h1>Blue River Watershed</h1>
 
-<h1>Blue River Watershed</h1>
+    <p>
+      An interactive story about restoration, monitoring,
+      and community stewardship.
+    </p>
+  </section>
 
-<p>
-An interactive story about restoration, monitoring,
-and community stewardship.
-</p>
+  <section id="scrolly">
 
-</section>
+    <div id="map"></div>
 
-<section id="scrolly">
+    <div id="story">
 
-<div id="map"></div>
+      <div class="step">
+        <h2>The Headwaters</h2>
 
-<div id="story">
+        <p>
+          This is where the story begins...
+        </p>
+      </div>
 
-<div class="step">
-<h2>The Headwaters</h2>
+      <div class="step">
+        <h2>Mining</h2>
 
-<p>
-This is where the story begins...
-</p>
+        <p>
+          Historic mining changed the watershed.
+        </p>
+      </div>
 
-</div>
+      <div class="step">
+        <h2>Restoration</h2>
 
-<div class="step">
-<h2>Mining</h2>
+        <p>
+          Blue River Watershed Group has worked to restore streams.
+        </p>
+      </div>
 
-<p>
-Historic mining changed the watershed.
-</p>
+    </div>
+  </section>
 
-</div>
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
 
-<div class="step">
-<h2>Restoration</h2>
-
-<p>
-Blue River Watershed Group has worked to restore streams.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
