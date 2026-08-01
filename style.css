@@ -91,7 +91,6 @@ body {
   font-size: 1.05rem;
   line-height: 1.6;
 }
-
 /* Mobile layout */
 @media (max-width: 700px) {
   #story {
@@ -103,4 +102,22 @@ body {
   .step {
     min-height: 100vh;
   }
+}
+
+/* Active step styling */
+.step {
+  opacity: 0.55;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.step.is-active {
+  opacity: 1;
+  transform: translateX(10px);
+}
+
+.step.is-active h2,
+.step.is-active p {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
 }
