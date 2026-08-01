@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+<meta charset="UTF-8">
 
-  <title>Blue River Watershed Story</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f8f9;
-      color: #18333d;
-    }
+<title>Blue River Watershed Story</title>
 
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 80px 24px;
-    }
+<link rel="stylesheet"
+      href="style.css">
 
-    h1 {
-      color: #176d8c;
-      font-size: clamp(2rem, 6vw, 4rem);
-    }
+<link
+rel="stylesheet"
+href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
-    p {
-      font-size: 1.2rem;
-      line-height: 1.7;
-    }
-  </style>
 </head>
 
 <body>
-  <main>
-    <h1>Blue River Watershed</h1>
 
-    <p>
-      Our interactive watershed story is coming soon.
-    </p>
-  </main>
+<section class="hero">
+
+<h1>Blue River Watershed</h1>
+
+<p>
+An interactive story about restoration, monitoring,
+and community stewardship.
+</p>
+
+</section>
+
+<section id="scrolly">
+
+<div id="map"></div>
+
+<div id="story">
+
+<div class="step">
+<h2>The Headwaters</h2>
+
+<p>
+This is where the story begins...
+</p>
+
+</div>
+
+<div class="step">
+<h2>Mining</h2>
+
+<p>
+Historic mining changed the watershed.
+</p>
+
+</div>
+
+<div class="step">
+<h2>Restoration</h2>
+
+<p>
+Blue River Watershed Group has worked to restore streams.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="script.js"></script>
+
 </body>
 </html>
